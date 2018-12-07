@@ -24,6 +24,15 @@ function onTest()
             break;
     }
 }
+function onFetchDataFromServer()
+{
+    /* Some server-side code */
+
+    return [
+        'totalUsers' => 1000,
+        'totalProjects' => 937
+    ];
+}
 ?>
 ==
 <div class="jumbotron title-js">
@@ -59,6 +68,7 @@ function onTest()
         <div class="panel-footer" id="result">
             {% partial "calcresult" %}
         </div>
+        <button data-request="onFetchDataFromServer" data-request-success="console.log(data)">Do nothing</button>
     </div>
 
 </div>

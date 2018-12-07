@@ -1,0 +1,16 @@
+{
+    "name": "codearx/product-plugin",
+    "description": "A demo product plugin",
+    "type": "october-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md. Arafat Rahman Rana",
+            "email": "aranab.dba@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "composer/installers": "~1.0"
+    }
+}

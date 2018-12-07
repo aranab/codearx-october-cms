@@ -1,0 +1,19 @@
+name: 'Codearx Demo Theme'
+description: 'A project demo theme'
+author: 'Md. Arafat Rahman'
+homepage: 'http://skarafat.com'
+previewImage: 'assets/images/screenshot.png'
+code: codearx-demo
+form: 
+    fields:
+        site_name:
+            label: Site Name
+            comment: The website name as it should appear on the front-end
+            default: My Amazing Site!
+        link_color:
+            label: Link color
+            type: colorpicker
+            assetVar: 'link-color'
+require:
+    - Acme.User
+    - Acme.Blog

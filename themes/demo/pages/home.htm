@@ -1,6 +1,13 @@
 title = "Demonstration"
 url = "/"
 layout = "default"
+is_hidden = 0
+
+[demoBlogPosts]
+maxItems = 10
+
+[demoTodo]
+max = 10
 ==
 <div class="jumbotron">
     <div class="container">
@@ -18,7 +25,17 @@ layout = "default"
         Usually each page built with October is a combination of a layout, page, partials and content blocks,
         although in simple cases you can just use a page without anything else.
     </p>
-
+    
+    <ul>
+        {% for post in demoBlogPosts.posts %}
+        <li>{{ post }}</li>        
+        {% endfor %} 
+    </ul> 
+    
+    <div>
+        {% component 'demoTodo' %}
+    </div>
+    
     <!-- Layouts -->
     <h3>Layouts</h3>
     <p class="lead">
